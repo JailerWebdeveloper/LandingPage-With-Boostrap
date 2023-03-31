@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important; 
+}
+
+.nomargin{
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#landing1{
+    background:url("./Source/LandviewBG.png")no-repeat 100% 100% ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+@media (max-width: 767.98px){
+    #landing1{
+        background:url("./Source/MobileBackground.png")no-repeat 100% 100% ;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+
+    #landingtitle{
+        font-size: 50px;
+    }
+}
+
+#navlist{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+#navlist a{
+    text-decoration: none;
+    color: white;
+
+}
+
+#navlist a:hover{
+    transition-property: all;
+    transition-duration: 0.7s;
+    filter: brightness(0) saturate(100%) invert(97%) sepia(67%) saturate(4489%) hue-rotate(103deg) brightness(107%) contrast(104%);
+}
+#iconhover img:hover{
+    transition-property: all;
+    transition-duration: 0.7s;
+    filter: brightness(0) saturate(100%) invert(97%) sepia(67%) saturate(4489%) hue-rotate(103deg) brightness(107%) contrast(104%);
+}
+
+#section3 #section4 #section5{
+    margin-top: 150px;
+}
+#section7{
+    margin-top: 150px;
+    padding-bottom:100px ;
+}
+#section6{
+    margin-top: 150px;
+    padding-bottom:100px ;
+    background-color: #252B42;
+}
+
+.flip-card{
+    max-width:273px;
+    height: 120px;
+    perspective: 1000px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+  .Offer{
+    width: 335px;
+    height: 607px;
+    color: black;
+    background-color: white;
+  }
+  #OfferPremiun{
+    width: 335px;
+    height: 693px;
+    background-color: #2091F9;
+    color: white;
+  }
+  .buttonPrice{
+    width: 255px;
+    color: white;
+    background-color: #2091F9;
+    height: 56px;
+    border: none;
+    border-radius: 35px;
+    transition: all 0.2s ease;
+  }
+
+  #OfferPremiun .buttonPrice{
+    background-color: white;
+    color: #2091F9;
+    transition: all 0.2s ease;
+  }
+
+
+  .buttonPrice:hover {
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+  }
+
+  #OfferPremiun .buttonPrice:hover{
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+  }
+
+  #formContact{
+    height: 669px;
+    width: 453px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    border-color: #DDDDDD;
+  }
+
+  .inputstyle{
+    height: 54px;
+    width: 353px;
+    left: 50px;
+    top: 125px;
+    border-radius: 39px;
+    padding: 19px 20px 19px 20px;
+    background-color: #E8E8E8;
+    border: none;
+
+  }
+
+  #Message{
+    height: 193px;
+    width: 353px;
+    left: 50px;
+    top: 323px;
+    border-radius: 20px;
+    padding: 23px 20px 23px 20px;
+
+  }
+
+  footer{
+    background-color: #252B42;
+    height: 50vh;
+    width: 100%;
+    color: white;
+    padding-top: 60px;
+
+  }
+
+  footer ul{
+    list-style: none;
+  }
+
+  footer ul a{
+    text-decoration: none;
+    color: white;
+  }
